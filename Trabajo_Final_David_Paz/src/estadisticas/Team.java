@@ -18,4 +18,18 @@ public class Team {
     }
     public void removePlayer (Player player){
     }
+
+
+    public int getTableScore() {
+        return tableScore;
+    }
+    public void setTableScore(int tableScore) {
+        this.tableScore = tableScore;
+    }
+    public int getGoalCounter() {
+        return goalCounter;
+    }
+    public void setGoalCounter(int goalCounter) {
+        this.goalCounter = goalCounter;
+    }
 }
