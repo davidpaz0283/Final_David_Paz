@@ -5,6 +5,16 @@ public class Team {
     private ArrayList<Player> players;
     private int tableScore;
     private int goalCounter;
+
+    public Team(){
+        this.players = new ArrayList<Player>();
+    }
+    public Team(String name, int goalCounter, int tableScore){
+        this.players = new ArrayList<Player>();
+        this.setName(name);
+        this.setGoalCounter(goalCounter);
+        this.setTableScore(tableScore);
+    }
     public String getName() {
         return name;
     }
