@@ -1,0 +1,32 @@
+@startuml
+class estadisticas.Player {
+- String name
+- int number
+- String position
+- int goalCounter
++ String getName()
++ void setName(String)
++ int getNumber()
++ void setNumber(int)
++ String getPosition()
++ void setPosition(String)
++ int getGoalCounter()
++ void setGoalCounter(int)
+}
+class Main {
++ {static} void main(String[])
+}
+class estadisticas.Team {
+- String name
+- ArrayList<Player> players
+- int tableScore
+- int goalCounter
++ String getName()
++ void setName(String)
++ ArrayList<Player> getPlayers()
++ void addPlayer(Player)
++ void removePlayer(Player)
+}
+
+estadisticas.Team o-- estadisticas.Player
+@enduml
