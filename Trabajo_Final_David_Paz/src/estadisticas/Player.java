@@ -28,4 +28,10 @@ public class Player {
     public void setGoalCounter(int goalCounter) {
         this.goalCounter = goalCounter;
     }
+    public Team getTeam() {
+        return team;
+    }
+    public void setTeam(Team team) {
+        this.team = team;
+    }
 }
