@@ -8,10 +8,9 @@ public class Main {
         // IntelliJ IDEA suggests fixing it.
         System.out.printf("Hello and welcome!");
         Team argentina = new Team("Argentina", 2, 3);
-        Player messi = new Player();
-        messi.setName("Lionel Messi");
-        messi.setNumber(10);
-        messi.setPosition("Delantero");
-        messi.setGoalCounter(0);
+
+        Player messi = new Player("Lionel Messi", 10, "Delantero", argentina);
+
+        System.out.println(messi.getTeam().getName());
     }
 }
