@@ -69,4 +69,8 @@ class estadisticas.Match {
 estadisticas.Team o-- estadisticas.Player
 estadisticas.Season o-- estadisticas.Team
 
+estadisticas.Team -- estadisticas.Match
+estadisticas.Match --o estadisticas.Season
+estadisticas.Team -- estadisticas.Season
+
 @enduml
