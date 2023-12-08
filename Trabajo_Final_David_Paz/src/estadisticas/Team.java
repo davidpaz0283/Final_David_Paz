@@ -42,4 +42,9 @@ public class Team {
     public void setGoalCounter(int goalCounter) {
         this.goalCounter = goalCounter;
     }
+    public void showPlayersList(){
+        int lenght = this.getPlayers().size();
+        String message = "En " + this.getName() + " hay " + lenght + " jugadores";
+        System.out.println(message);
+    }
 }
