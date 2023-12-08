@@ -25,8 +25,10 @@ public class Team {
         return players;
     }
     public void addPlayer(Player player) {
+        getPlayers().add(player);
     }
     public void removePlayer (Player player){
+        getPlayers().remove(player);
     }
 
 
