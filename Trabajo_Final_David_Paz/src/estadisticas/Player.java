@@ -6,7 +6,7 @@ public class Player {
     private int goalCounter;
 
     private Team team;
-    
+
     public String getName() {
         return name;
     }

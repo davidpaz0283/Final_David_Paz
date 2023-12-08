@@ -6,6 +6,7 @@ public class Season {
     private Date startDate;
     private Date finishDate;
     private ArrayList<Team> teams;
+    private ArrayList<Match> matches;
     public String getName() {
         return name;
     }
