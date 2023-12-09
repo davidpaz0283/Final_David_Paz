@@ -1,8 +1,4 @@
-import estadisticas.Match;
-import estadisticas.Player;
-
-import estadisticas.Season;
-import estadisticas.Team;
+import estadisticas.*;
 
 import java.util.ArrayList;
 import javax.swing.*;
@@ -18,6 +14,7 @@ public class Main {
     }
     public static void main(String[] args) {
         Season faseGrupoMundial = new Season();
+
         faseGrupoMundial.addTeam(new Team("Qatar"));
         faseGrupoMundial.addTeam(new Team("Ecuador"));
         faseGrupoMundial.addTeam(new Team("Senegal"));
