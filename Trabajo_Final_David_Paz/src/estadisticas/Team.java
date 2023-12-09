@@ -9,7 +9,11 @@ public class Team {
     public Team(){
         this.players = new ArrayList<Player>();
     }
-    public Team(String name, int goalCounter, int tableScore){
+    public Team(String name){
+        this.players = new ArrayList<Player>();
+        this.setName(name);
+    }
+    public Team(String name, int goalCounter, int tableScore) {
         this.players = new ArrayList<Player>();
         this.setName(name);
         this.setGoalCounter(goalCounter);
@@ -52,7 +56,8 @@ public class Team {
 
         getPlayers().forEach(player -> {
             String playerText = player.getName()+ " " + player.getGoalCounter();
-            System.out.println(player.getName());
+
+            System.out.println(playerText);
         });
     }
 }

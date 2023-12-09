@@ -56,10 +56,7 @@ public class Player {
         }
     }
     public void addToTeamList() {
-        if (this.getTeam() == null) return;
-        this
-                .getTeam().
-                getPlayers().
-                add(this);
+        if(this.getTeam() == null) return;
+        getTeam().addPlayer(this);
     }
 }
