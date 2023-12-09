@@ -1,5 +1,6 @@
 import estadisticas.Player;
 
+import estadisticas.Match;
 import estadisticas.Team;
 public class Main {
     public static void main(String[] args) {
@@ -20,5 +21,12 @@ public class Main {
 
         argentina.showPlayersList();
         francia.showPlayersList();
+
+        Match finalMatch = new Match();
+        finalMatch.setLocalTeam(argentina);
+        finalMatch.setVisitantTeam(francia);
+        finalMatch.incrementLocalGoals();
+        finalMatch.incrementVisitantGoals();
+        finalMatch.incrementLocalGoals();
     }
 }
