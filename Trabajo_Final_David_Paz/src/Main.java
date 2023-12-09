@@ -5,7 +5,7 @@ import javax.swing.*;
 import java.util.List;
 public class Main {
     public static String [][] generatePlayer(){
-        String[][] jugadores = new String[3][3];
+        String[][] jugadores = new String[11][11];
         for(int i = 0; i < jugadores.length; i++){
             jugadores[i][0] = JOptionPane.showInputDialog("Por favor ingrese el nombre del jugador: " + (i+1));
             jugadores[i][1] = JOptionPane.showInputDialog("Por favor ingrese la posición de: " + jugadores[i][0]);
