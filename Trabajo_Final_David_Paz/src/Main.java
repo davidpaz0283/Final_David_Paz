@@ -14,20 +14,15 @@ public class Main {
     }
     public static void main(String[] args) {
 
-        Llave cuartosDeFinalMundial = new Llave(); //
-        cuartosDeFinalMundial.addTeam(new Team("Croacia"));
-        cuartosDeFinalMundial.addTeam(new Team("Brasil"));
+        Llave semiFinalMundial = new Llave();
+        semiFinalMundial.addTeam(new Team("Argentina"));
+        semiFinalMundial.addTeam(new Team("Croacia"));
 
-        cuartosDeFinalMundial.addTeam(new Team("Paises Bajos"));
-        cuartosDeFinalMundial.addTeam(new Team("Argentina"));
+        semiFinalMundial.addTeam(new Team("Francia"));
+        semiFinalMundial.addTeam(new Team("Marruecos"));
 
-        cuartosDeFinalMundial.addTeam(new Team("Inglaterra"));
-        cuartosDeFinalMundial.addTeam(new Team("Francia"));
 
-        cuartosDeFinalMundial.addTeam(new Team("Marruecos"));
-        cuartosDeFinalMundial.addTeam(new Team("Portugal"));
-
-        ArrayList<Team> countries = cuartosDeFinalMundial.getTeams();
+        ArrayList<Team> countries = semiFinalMundial.getTeams();
 
         for (int j = 0; j < countries.size(); j++) {
             JOptionPane.showMessageDialog(null, "Vamos a cargar los jugadores de : " + countries.get(j).getName());
@@ -36,55 +31,26 @@ public class Main {
                 new Player(jugadores[i][0], i + 1, jugadores[i][1], countries.get(j));
             }
         }
-        cuartosDeFinalMundial.addMatch(new Match(
+        semiFinalMundial.addMatch(new Match(
                 countries.get(0),
                 countries.get(1))
         );
-        cuartosDeFinalMundial.addMatch(new Match(
+        semiFinalMundial.addMatch(new Match(
                 countries.get(2),
-                countries.get(3))
-        );
-        cuartosDeFinalMundial.addMatch(new Match(
-                countries.get(4),
-                countries.get(5))
-        );
-        cuartosDeFinalMundial.addMatch(new Match(
-                countries.get(6),
-                countries.get(7)
+                countries.get(3)
         ));
-        Match cuartos1 = cuartosDeFinalMundial.getMatches().get(0);
-        cuartos1.incrementLocalGoals();
-        cuartos1.incrementLocalGoals();
-        cuartos1.incrementLocalGoals();
-        cuartos1.incrementLocalGoals();
-        cuartos1.incrementLocalGoals();
-        cuartos1.incrementVisitantGoals();
-        cuartos1.incrementVisitantGoals();
-        cuartos1.incrementVisitantGoals();
 
-        Match cuartos2 = cuartosDeFinalMundial.getMatches().get(1);
-        cuartos2.incrementLocalGoals();
-        cuartos2.incrementLocalGoals();
-        cuartos2.incrementLocalGoals();
-        cuartos2.incrementLocalGoals();
-        cuartos2.incrementLocalGoals();
-        cuartos2.incrementVisitantGoals();
-        cuartos2.incrementVisitantGoals();
-        cuartos2.incrementVisitantGoals();
-        cuartos2.incrementVisitantGoals();
-        cuartos2.incrementVisitantGoals();
-        cuartos2.incrementVisitantGoals();
+        Match semi1 = semiFinalMundial.getMatches().get(0);
+        semi1.incrementLocalGoals();
+        semi1.incrementLocalGoals();
+        semi1.incrementLocalGoals();
 
-        Match cuartos3 = cuartosDeFinalMundial.getMatches().get(2);
-        cuartos3.incrementLocalGoals();
-        cuartos3.incrementVisitantGoals();
-        cuartos3.incrementVisitantGoals();
+        Match semi2 = semiFinalMundial.getMatches().get(1);
+        semi2.incrementLocalGoals();
+        semi2.incrementLocalGoals();
 
         
-        Match cuartos4 = cuartosDeFinalMundial.getMatches().get(3);
-        cuartos4.incrementLocalGoals();
-
-        cuartosDeFinalMundial.getNextStepTeams().forEach(team -> {
+        semiFinalMundial.getNextStepTeams().forEach(team -> {
             team.showPlayersList();
 
         });
