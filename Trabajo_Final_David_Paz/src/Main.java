@@ -1,11 +1,18 @@
+import estadisticas.Match;
 import estadisticas.Player;
 
-import estadisticas.Match;
+import estadisticas.Season;
 import estadisticas.Team;
+
+import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
+        Season faseGrupoMundial = new Season();
         Team argentina = new Team("Argentina", 2, 3);
         Team francia = new Team("Francia", 1, 0);
+
+        faseGrupoMundial.addTeam(argentina);
+        faseGrupoMundial.addTeam(francia);
 
         Player fideo = new Player("Angel Di Maria", 7, "Delantero", argentina);
         Player pulga = new Player("Lionel Messi", 10, "Delantero", argentina);
