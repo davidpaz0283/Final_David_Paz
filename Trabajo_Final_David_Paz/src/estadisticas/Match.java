@@ -48,4 +48,14 @@ public class Match {
     public void setLocalTeam(Team localTeam) {
         this.localTeam = localTeam;
     }
+    public boolean isLocalWinner() {
+        return getLocalGoals() > getVisitantGoals();
+    }
+    public boolean isVisitantWinner() {
+        return getLocalGoals() < getVisitantGoals();
+    }
+    public boolean tieMatch() {
+        return getVisitantGoals() == getVisitantGoals();
+    }
+
 }

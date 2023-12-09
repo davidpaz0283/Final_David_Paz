@@ -12,7 +12,7 @@ public class Llave extends Season{
             } else if(actualMatch.isLocalWinner()) {
                 winners.add(actualMatch.getLocalTeam());
             } else {
-                
+
                 winners.add(actualMatch.getVisitantTeam());
             }
         }
