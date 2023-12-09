@@ -7,6 +7,11 @@ public class Match {
     private int localGoals;
     private Team visitantTeam;
     private Team localTeam;
+
+    public Match(Team localTeam, Team visitantTeam){
+        setLocalTeam(localTeam);
+        setVisitantTeam(visitantTeam);
+    }
     public Date getDate() {
         return date;
     }
