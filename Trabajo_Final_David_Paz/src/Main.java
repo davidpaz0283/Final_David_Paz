@@ -198,7 +198,7 @@ public class Main {
 
         //Grupo B
         faseDeGruposMundial.addMatch(new Match(
-                countries.get(0), countries.get(1)) //Primer partido del Mundial!!
+                countries.get(0), countries.get(1)) 
         );
         faseDeGruposMundial.addMatch(new Match(
                 countries.get(2), countries.get(3))
@@ -218,7 +218,7 @@ public class Main {
 
         //Grupo C
         faseDeGruposMundial.addMatch(new Match(
-                countries.get(0), countries.get(1)) //Primer partido del Mundial!!
+                countries.get(0), countries.get(1))
         );
         faseDeGruposMundial.addMatch(new Match(
                 countries.get(2), countries.get(3))
@@ -238,7 +238,7 @@ public class Main {
 
         //Grupo D
         faseDeGruposMundial.addMatch(new Match(
-                countries.get(0), countries.get(1)) //Primer partido del Mundial!!
+                countries.get(0), countries.get(1))
         );
         faseDeGruposMundial.addMatch(new Match(
                 countries.get(2), countries.get(3))
@@ -258,7 +258,7 @@ public class Main {
 
         //Grupo E
         faseDeGruposMundial.addMatch(new Match(
-                countries.get(0), countries.get(1)) //Primer partido del Mundial!!
+                countries.get(0), countries.get(1))
         );
         faseDeGruposMundial.addMatch(new Match(
                 countries.get(2), countries.get(3))
@@ -278,7 +278,7 @@ public class Main {
 
         //Grupo F
         faseDeGruposMundial.addMatch(new Match(
-                countries.get(0), countries.get(1)) //Primer partido del Mundial!!
+                countries.get(0), countries.get(1))
         );
         faseDeGruposMundial.addMatch(new Match(
                 countries.get(2), countries.get(3))
@@ -298,7 +298,7 @@ public class Main {
 
         //Grupo G
         faseDeGruposMundial.addMatch(new Match(
-                countries.get(0), countries.get(1)) //Primer partido del Mundial!!
+                countries.get(0), countries.get(1))
         );
         faseDeGruposMundial.addMatch(new Match(
                 countries.get(2), countries.get(3))
@@ -318,7 +318,7 @@ public class Main {
 
         //Grupo H
         faseDeGruposMundial.addMatch(new Match(
-                countries.get(0), countries.get(1)) //Primer partido del Mundial!!
+                countries.get(0), countries.get(1))
         );
         faseDeGruposMundial.addMatch(new Match(
                 countries.get(2), countries.get(3))
