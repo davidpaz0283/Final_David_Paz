@@ -14,15 +14,12 @@ public class Main {
     }
     public static void main(String[] args) {
 
-        Llave semiFinalMundial = new Llave();
-        semiFinalMundial.addTeam(new Team("Argentina"));
-        semiFinalMundial.addTeam(new Team("Croacia"));
+        Llave fasefinalMundial = new Llave();
+        //La Gran Final!
+        fasefinalMundial.addTeam(new Team("Argentina"));
+        fasefinalMundial.addTeam(new Team("Francia"));
 
-        semiFinalMundial.addTeam(new Team("Francia"));
-        semiFinalMundial.addTeam(new Team("Marruecos"));
-
-
-        ArrayList<Team> countries = semiFinalMundial.getTeams();
+        ArrayList<Team> countries = fasefinalMundial.getTeams();
 
         for (int j = 0; j < countries.size(); j++) {
             JOptionPane.showMessageDialog(null, "Vamos a cargar los jugadores de : " + countries.get(j).getName());
@@ -31,28 +28,18 @@ public class Main {
                 new Player(jugadores[i][0], i + 1, jugadores[i][1], countries.get(j));
             }
         }
-        semiFinalMundial.addMatch(new Match(
-                countries.get(0),
-                countries.get(1))
+        fasefinalMundial.addMatch(new Match(
+                fasefinalMundial.getTeams().get(0),
+                fasefinalMundial.getTeams().get(1))
         );
-        semiFinalMundial.addMatch(new Match(
-                countries.get(2),
-                countries.get(3)
-        ));
 
-        Match semi1 = semiFinalMundial.getMatches().get(0);
-        semi1.incrementLocalGoals();
-        semi1.incrementLocalGoals();
-        semi1.incrementLocalGoals();
+        Match finalMatch = fasefinalMundial.getMatches().get(0);
+        finalMatch.incrementLocalGoals();
 
-        Match semi2 = semiFinalMundial.getMatches().get(1);
-        semi2.incrementLocalGoals();
-        semi2.incrementLocalGoals();
-
-        
-        semiFinalMundial.getNextStepTeams().forEach(team -> {
+        fasefinalMundial.getNextStepTeams().forEach(team -> {
             team.showPlayersList();
 
         });
+        //Argentina Campeón!!!!
     }
 }
